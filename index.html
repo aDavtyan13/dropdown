@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="dist/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="dist/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="sections">
+    <div class="selected_section">
+        <div class="interests">
+            <h3 class="selected_header">Interests<span class="icon-cross"></span></h3>
+            <div class="selected_category_list d-flex">
+                <p>Collage Grade Students<span class="icon-cross"></span></p>
+                <p>Collage Grade Students<span class="icon-cross"></span></p>
+            </div>
+        </div>
+        <div class="behavior">
+            <h3 class="selected_header">Behaviours<span class="icon-cross"></span></h3>
+            <div class="selected_category_list d-flex">
+                <p>Collage Grade Students<span class="icon-cross"></span></p>
+            </div>
+        </div>
+        <div class="suggestions">
+            <h3 class="suggestions_header">Suggestions</h3>
+            <div class="suggestion_category_list d-flex">
+                <p>Collage Grade Students</p>
+                <p>Rome</p>
+                <p>Lorem Ipsum</p>
+            </div>
+        </div>
+        <p class="or">OR</p>
+        <div class="search d-flex">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Search...">
+            <button class="group_button">Groups</button>
+        </div>
+    </div>
+    <div class="categories_section">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul class="categories_items">
+                    <li class="category_all">
+                        <a href="#">All</a>
+                    </li>
+                    <li class="dropdown_items">
+                        <div class="dropdown_name d-flex">
+                            <a class="dropdown_link" data-toggle="collapse" href="#demographic" role="button"
+                               aria-expanded="false" aria-controls="demographic">Demographic</a>
+                            <a href="#"><span class="icon-arrow_drop_up" data-toggle="collapse" href="#demographic"
+                                              role="button" aria-expanded="false"
+                                              aria-controls="demographic"></span></a>
+                        </div>
+                        <div class="collapse collapse_container" id="demographic">
+                            <div class="dropdown_name d-flex">
+                                <a class="dropdown_link" data-toggle="collapse" href="#city" role="button"
+                                   aria-expanded="false" aria-controls="city">Cities</a>
+                                <a href="#"><span class="icon-arrow_drop_up" data-toggle="collapse" href="#city"
+                                                  role="button" aria-expanded="false"
+                                                  aria-controls="city"></span></a>
+                            </div>
+                        </div>
+                        <div class="collapse collapse_container" id="city">
+                            <div class="collapse_inner_list d-flex flex-column">
+                                <a class="dropdown_link" href="#">City 1</a>
+                                <a class="dropdown_link" href="#">City 2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown_items">
+                        <div class="dropdown_name d-flex">
+                            <a class="dropdown_link" data-toggle="collapse" href="#interests" role="button"
+                               aria-expanded="false" aria-controls="interests">Interests</a>
+                            <a href="#"><span class="icon-arrow_drop_up" data-toggle="collapse" href="#interests"
+                                              role="button" aria-expanded="false"
+                                              aria-controls="interests"></span></a>
+                        </div>
+                        <div class="collapse collapse_container" id="interests">
+                            <div class="dropdown_name d-flex">
+                                <a class="dropdown_link" data-toggle="collapse" href="#sport" role="button"
+                                   aria-expanded="false" aria-controls="sport">Sports And Outdoors</a>
+                                <a href="#"><span class="icon-arrow_drop_up" data-toggle="collapse" href="#sport"
+                                                  role="button" aria-expanded="false"
+                                                  aria-controls="sport"></span></a>
+                            </div>
+                        </div>
+                        <div class="collapse collapse_container" id="sport">
+                            <div class="collapse_inner_list d-flex flex-column">
+                                <a class="dropdown_link" href="#">School <i class="icon-search"></i></a>
+                                <a class="dropdown_link" href="#">Sport</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="options">
+                    <div class="option_item d-flex">
+                        <div>
+                            <label for="basketball" class="checkbox_label d-flex">Basketball
+                                <input type="checkbox" id="basketball">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label for="american_football" class="checkbox_label d-flex">American football
+                            <input type="checkbox" id="american_football">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label for="business" class="checkbox_label d-flex">Business
+                            <input type="checkbox" id="business">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label for="tennis" class="checkbox_label d-flex">Tennis
+                            <input type="checkbox" id="tennis">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label for="collage" class="checkbox_label d-flex">Collage Grade Students
+                            <input type="checkbox" id="collage">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                    <div class="option_item d-flex">
+                        <label class="checkbox_label d-flex">Basketball
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="edu_level d-flex">
+                            <p class="number">4.2m</p>
+                            <p class="level">Education level</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

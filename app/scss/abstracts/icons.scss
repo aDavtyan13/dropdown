@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'dropdown';
+  src: url('../fonts/dropdown.eot?rhnqtn');
+  src: url('../fonts/dropdown.eot?rhnqtn#iefix') format('embedded-opentype'),
+  url('../fonts/dropdown.ttf?rhnqtn') format('truetype'),
+  url('../fonts/dropdown.woff?rhnqtn') format('woff'),
+  url('../fonts/dropdown.svg?rhnqtn#dropdown') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'dropdown' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_drop_up:before {
+  content: "\e902";
+}
+
+.icon-arrow_drop_down:before {
+  content: "\e903";
+}
+
+.icon-search:before {
+  content: "\e901";
+}
+
+.icon-cross:before {
+  content: "\e900";
+}

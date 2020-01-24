@@ -1,0 +1,155 @@
+@import "../base/_base";
+@import "../abstracts/_variables";
+@import "../abstracts/_mixins";
+
+.categories {
+  &_items {
+    height: $categories_items_height;
+    overflow: auto;
+    padding: 15px 0 0 20px;
+    margin-bottom: 0;
+
+    & a {
+      color: $main--color;
+    }
+  }
+
+  &_section {
+    @include border-with-radius;
+    position: relative;
+    top: -1px;
+  }
+}
+
+.category_all, .dropdown_items {
+  padding: 5px 0;
+}
+
+.dropdown {
+  &_name {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_link {
+    width: 100%;
+
+    & i {
+      transform: rotate(90deg);
+      color: #eef0f4;
+    }
+  }
+}
+
+.collapse {
+  & .inner_link {
+    position: absolute;
+    right: $scroll--width+$arrow--size;
+  }
+}
+
+.dropdown_name span, .inner_link span {
+  right: $scroll--width + $arrow--size;
+  font-size: $arrow--size;
+}
+
+.dropdown_container {
+  & a {
+    padding: 6px 0 6px 17px;
+  }
+}
+
+.options {
+  height: $options_height;
+  overflow: auto;
+}
+
+.edu_level {
+  font-size: $edu_level_font--size;
+  padding-right: $scroll--width+10px;
+
+  & .number {
+    padding-right: 5px;
+    color: $main--color;
+    margin-bottom: 0;
+  }
+
+  & .level {
+    color: $edu--color;
+    border-left: 1px solid $edu--color;
+    padding-left: 7px;
+    margin-bottom: 0;
+  }
+}
+
+.option_item {
+  justify-content: space-between;
+  margin: 20px 0 15px;
+  align-items: center;
+}
+
+.checkbox_label {
+  position: relative;
+  padding-left: $checkmark_size+10;
+  cursor: pointer;
+  font-size: $checkbox_label_font--size;
+  color: $main--color;
+  margin-top: 0;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+.checkbox_label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: $checkmark_size;
+  width: $checkmark_size;
+  background-color: $white;
+  border: 1px solid $scroll--color;
+  border-radius: $checkmark_border_radius;
+}
+
+.checkbox_label input:checked ~ .checkmark {
+  background-color: $main--color;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox_label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox_label .checkmark:after {
+  left: $checkmark_size/3;
+  top: $checkmark_size/8;
+  width: $check_width;
+  height: $check_width*2;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.collapse_container {
+  margin: 9px 0 0 20px;
+}
+
+.collapse_inner_list {
+  margin-left: 20px;
+
+  & a {
+    margin-bottom: 7px;
+  }
+}

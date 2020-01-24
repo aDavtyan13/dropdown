@@ -1,0 +1,10 @@
+@import "_variables";
+@mixin border-with-radius{
+  border: 1px solid $border--color;
+  border-radius: $border--radius;
+}
+@mixin selected-and-suggestion-header{
+  padding: 15px 0 0 15px;
+  font-weight: 400;
+  font-size: $header_font--size;
+}
