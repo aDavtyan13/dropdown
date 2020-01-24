@@ -1,0 +1,41 @@
+@import "../base/_base";
+@import "../abstracts/_variables";
+
+.search {
+  padding: 10px;
+  border-top: 1px solid $border--color;
+  border-radius: $border--radius;
+  align-items: center;
+
+  & input {
+    width: 100%;
+    border: none;
+    padding-left: $search_icon_size / 2;
+  }
+
+  & ::placeholder {
+    font-style: italic;
+    color: $search--color;
+  }
+
+  & i {
+    font-size: $search_icon_size;
+    transform: rotate(90deg);
+    color: $search--color;
+  }
+
+  & button {
+    padding: $group_button--padding;
+    font-size: 19px;
+    border: 2px solid $group_button--color;
+    background-color: $white;
+    color: $group_button--color;
+    border-radius: $group_button_border--radius;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $group_button--color;
+      color: $white;
+    }
+  }
+}

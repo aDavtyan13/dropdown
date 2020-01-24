@@ -1,0 +1,81 @@
+@import "../abstracts/_variables";
+@import "../base/_base";
+@import "../abstracts/_mixins";
+
+.sections {
+  display: block;
+  width: 50%;
+  margin: 100px auto 0;
+}
+
+.selected {
+  &_section {
+    @include border-with-radius;
+    position: relative;
+  }
+
+  &_header {
+    @include selected-and-suggestion-header;
+    color: $category_item--color;
+    position: relative;
+
+    & span {
+      right: $selected_category_close_cross;
+      position: absolute;
+      font-size: $selected_category_close_cross;
+      color: $main--color;
+      cursor: pointer;
+    }
+  }
+}
+
+.suggestion_category_list,
+.selected_category_list {
+  margin: 0 15px;
+
+  & span {
+    right: 3%;
+    position: absolute;
+    font-size: $selected_category_cross_size;
+    top: calc(50% - #{$selected_category_cross_size/2});
+  }
+
+  & p {
+    background-color: $selected_category_list_background;
+    padding: 10px 50px 10px 20px;
+    margin: 0 30px 10px 0;
+    position: relative;
+    color: $main--color;
+    border: 1px solid transparent;
+    border-radius: $border--radius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main--color;
+      color: $white;
+    }
+  }
+}
+
+.suggestion_category_list p {
+  width: max-content;
+  padding: 10px 20px;
+}
+
+.suggestions {
+  background-color: $suggestions_background;
+
+  &_header {
+    @include selected-and-suggestion-header;
+    color: $main--color;
+  }
+}
+
+.or {
+  position: absolute;
+  right: -12px;
+  padding: $or--padding 0;
+  background-color: $white;
+  top: calc(50% - 36px);
+  color: $or--color;
+}
