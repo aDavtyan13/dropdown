@@ -20,10 +20,10 @@
     position: relative;
 
     & span {
-      right: $selected_category_close_cross;
+      right: map_get($font-size, "selected_category_cross_font--size");;
       position: absolute;
-      font-size: $selected_category_close_cross;
-      color: $main--color;
+      font-size: map_get($font-size, "selected_category_cross_font--size");;
+      color: map-get($color, "main--color");
       cursor: pointer;
     }
   }
@@ -36,23 +36,23 @@
   & span {
     right: 3%;
     position: absolute;
-    font-size: $selected_category_cross_size;
-    top: calc(50% - #{$selected_category_cross_size/2});
+    font-size: map_get($font-size, "selected_category_cross_font--size");
+    top: calc(50% - #{map_get($font-size, "selected_category_cross_font--size") / 2});
   }
 
   & p {
-    background-color: $selected_category_list_background;
+    background-color: map-get($color, "selected_category_list_background");
     padding: 10px 50px 10px 20px;
     margin: 0 30px 10px 0;
     position: relative;
-    color: $main--color;
+    color: map-get($color, "main--color");
     border: 1px solid transparent;
-    border-radius: $border--radius;
+    border-radius: map_get($border-radius, "category_list_border--radius");
     cursor: pointer;
 
     &:hover {
-      background-color: $main--color;
-      color: $white;
+      background-color: map-get($color, "main--color");
+      color: map-get($color, "white");
     }
   }
 }
@@ -63,11 +63,11 @@
 }
 
 .suggestions {
-  background-color: $suggestions_background;
+  background-color: map-get($color, "suggestions_background--color");
 
   &_header {
     @include selected-and-suggestion-header;
-    color: $main--color;
+    color: map-get($color, "main--color");
   }
 }
 
@@ -75,7 +75,7 @@
   position: absolute;
   right: -12px;
   padding: $or--padding 0;
-  background-color: $white;
+  background-color: map-get($color, "white");
   top: calc(50% - 36px);
   color: $or--color;
 }

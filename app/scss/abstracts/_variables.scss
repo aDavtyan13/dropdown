@@ -1,30 +1,21 @@
-$border--color: #A9ADB2;
-$search--color: #eef0f4;
-$search_icon_size: 27px;
-$header_font--size: 18px;
-$header_font--size: 18px;
+$color: ("border--color": #A9ADB2, "search--color": #eef0f4, "group_button--color": #6F87B2, "scroll--color": #B3C0D4,
+        "suggestions_background--color": #F9F9F9, "white": #ffffff, "main--color": #626D83,
+        "selected_category_list_background": #E5F1FF);
+$font-size: ("selected_category_cross_font--size": 10px, "header_font--size": 18px, "edu_level_font--size": 14px,
+        "checkbox_label_font--size": 17px,"search_icon_font--size": 27px, "arrow_font--size": 16px);
+$border-radius: ("group_button_border--radius": 5px,"scroll_border--radius": 10px,"category_list_border--radius": 5px,
+        "checkmark_border--radius": 3px,"search_border--radius": 5px);
+$or--color: map-get($color, "border--color");
+$edu--color: map-get($color, "border--color");
+$category_item--color: map-get($color, "border--color");
 $group_button--padding: 4px 13px;
-$group_button_border--radius: 5px;
-$group_button--color: #6F87B2;
-$scroll--color: #B3C0D4;
+//$group_button_border--radius: 5px;
 $scroll--width: 9px;
-$scroll_border_radius: 10px;
-$category_item--color: $border--color;
-$suggestions_background: #F9F9F9;
-$selected_category_cross_size: 10px;
-$selected_category_close_cross: 10px;
-$selected_category_list_background: #E5F1FF;
-$or--color: $border--color;
-$main--color: #626D83;
-$arrow--size: 16px;
+//$scroll_border_radius: 10px;
 $or--padding: 6px;
-$border--radius: 5px;
-$edu--color: $border--color;
-$white: #ffffff;
+//$border--radius: 5px;
 $categories_items_height: 345px;
 $options_height: 345px;
-$edu_level_font--size: 14px;
-$checkbox_label_font--size: 17px;
-$checkmark_border_radius: 3px;
+//$checkmark_border_radius: 3px;
 $checkmark_size: 20px;
-$check_width: $checkmark_size/4;
+$check_width: $checkmark_size / 4;

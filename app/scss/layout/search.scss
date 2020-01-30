@@ -3,39 +3,39 @@
 
 .search {
   padding: 10px;
-  border-top: 1px solid $border--color;
-  border-radius: $border--radius;
+  border-top: 1px solid map-get($color, "border--color");
+  border-radius: map_get($border-radius, "search_border--radius");
   align-items: center;
 
   & input {
     width: 100%;
     border: none;
-    padding-left: $search_icon_size / 2;
+    padding-left: map_get($font-size, "search_icon_font--size") / 2;
   }
 
   & ::placeholder {
     font-style: italic;
-    color: $search--color;
+    color: map-get($color, "search--color");
   }
 
   & i {
-    font-size: $search_icon_size;
+    font-size: map-get($font-size, "search_icon_font--size");
     transform: rotate(90deg);
-    color: $search--color;
+    color: map-get($color, "search--color");
   }
 
   & button {
     padding: $group_button--padding;
     font-size: 19px;
-    border: 2px solid $group_button--color;
-    background-color: $white;
-    color: $group_button--color;
-    border-radius: $group_button_border--radius;
+    border: 2px solid map_get($color, "group_button--color");
+    background-color: map-get($color, "white");
+    color: map_get($color, "group_button--color");
+    border-radius: map_get($border-radius, "group_button_border--radius");
 
     &:hover {
       cursor: pointer;
-      background-color: $group_button--color;
-      color: $white;
+      background-color: map_get($color, "group_button--color");
+      color: map-get($color, "white");
     }
   }
 }

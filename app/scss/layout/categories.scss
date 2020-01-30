@@ -10,7 +10,7 @@
     margin-bottom: 0;
 
     & a {
-      color: $main--color;
+      color: map-get($color, "main--color");
     }
   }
 
@@ -44,13 +44,13 @@
 .collapse {
   & .inner_link {
     position: absolute;
-    right: $scroll--width+$arrow--size;
+    right: $scroll--width + map_get($font-size, "arrow_font--size");
   }
 }
 
 .dropdown_name span, .inner_link span {
-  right: $scroll--width + $arrow--size;
-  font-size: $arrow--size;
+  right: $scroll--width + map_get($font-size, "arrow_font--size");
+  font-size: map-get($font-size, "arrow_font--size");
 }
 
 .dropdown_container {
@@ -65,12 +65,12 @@
 }
 
 .edu_level {
-  font-size: $edu_level_font--size;
-  padding-right: $scroll--width+10px;
+  font-size: map-get($font-size, "edu_level_font--size");
+  padding-right: $scroll--width + 10px;
 
   & .number {
     padding-right: 5px;
-    color: $main--color;
+    color: map-get($color, "main--color");
     margin-bottom: 0;
   }
 
@@ -90,10 +90,10 @@
 
 .checkbox_label {
   position: relative;
-  padding-left: $checkmark_size+10;
+  padding-left: $checkmark_size + 10;
   cursor: pointer;
-  font-size: $checkbox_label_font--size;
-  color: $main--color;
+  font-size: map-get($font-size, "checkbox_label_font--size");
+  color: map-get($color, "main--color");
   margin-top: 0;
   user-select: none;
   margin-bottom: 0;
@@ -113,13 +113,13 @@
   left: 0;
   height: $checkmark_size;
   width: $checkmark_size;
-  background-color: $white;
-  border: 1px solid $scroll--color;
-  border-radius: $checkmark_border_radius;
+  background-color: map-get($color, "white");
+  border: 1px solid map-get($color,"scroll--color");;
+  border-radius: map_get($border-radius, "checkmark_border--radius");
 }
 
 .checkbox_label input:checked ~ .checkmark {
-  background-color: $main--color;
+  background-color: map-get($color, "main--color");
 }
 
 .checkmark:after {
@@ -133,11 +133,11 @@
 }
 
 .checkbox_label .checkmark:after {
-  left: $checkmark_size/3;
-  top: $checkmark_size/8;
+  left: $checkmark_size / 3;
+  top: $checkmark_size / 8;
   width: $check_width;
-  height: $check_width*2;
-  border: solid white;
+  height: $check_width * 2;
+  border: solid map-get($color, "white");
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }

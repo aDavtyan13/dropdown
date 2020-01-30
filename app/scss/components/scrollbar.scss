@@ -4,10 +4,10 @@
   width: $scroll--width;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: $scroll_border_radius;
-  background-color: $scroll--color;
+  border-radius: map-get($border-radius, "scroll_border--radius");
+  background-color: map-get($color,"scroll--color");
 }
 ::-webkit-scrollbar-track-piece{
   background-color: #E7EEF4;
-  border-radius: $scroll_border_radius;
+  border-radius: map-get($border-radius, "scroll_border--radius");
 }
